@@ -1,0 +1,42 @@
+nav {
+    text-align: right;
+}
+
+body {
+    font-style: roboto;
+    background-color: rgba(32,33,36,1);
+    color: white;
+}
+
+.adv-search {
+    color: rgba(239,154,154,1);
+    font-size: 32px
+}
+
+.top {
+    text-align: right;
+
+}
+
+.logo {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.logo-small {
+    text-align: left;
+
+}
+
+.search {
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.asearch {
+    padding-top: 20px;
+    padding-left: 200px;
+    text-align: left;
+
+}
