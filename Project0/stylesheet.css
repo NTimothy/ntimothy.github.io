@@ -11,6 +11,7 @@ body {
 .adv-search {
     color: rgba(239,154,154,1);
     font-size: 32px
+    text-align: center;
 }
 
 .top {
