@@ -4,9 +4,9 @@
         <title>Google Search</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <nav>
-                <a href="index.html">Google Search</a>
-                <a href="isearch.html">Image Search</a>
-                <a href="asearch.html">Advanced Search</a>
+              <a href="index.html">Google Search</a>
+              <a href="isearch.html">Image Search</a>
+              <a href="asearch.html">Advanced Search</a>
             </nav>
 
         <link rel="stylesheet" href="stylesheet.css">
@@ -24,24 +24,50 @@
         </div>
         <div class="asearch">
             <form action="https://www.google.com/search">
-                Find pages with...
-                all these words: <input type="text" name="as_q"> <br>
-                this exact word or phrase: <input type="text" name="as_epq"> <br>
-                any of these words: <br>
-                none of these words <br>
-                numbers ranging from ___ to ___ <br>
+                Find pages with... <br><br>
+                all these words:                                <input type="text" name="as_q"> <br>
+                this exact word or phrase:                      <input type="text" name="as_epq"> <br>
+                any of these words:                             <input type="text" name="as_oq"> <br>
+                none of these words                             <input type="text" name="as_eq"> <br>
+                numbers ranging from <input type="text" name="as_nlo"> to <input type="text" name="as_nhi"> <br>
 
                 Then narrow your results by... <br>
-                language LANGUAGE <br>
-                region REGION <br>
-                last update <br>
-                site or domain <br>
-                terms appearing anywhere in the page <br>
-                SafeSearch <br>
-                file type <br>
-                usage rights <br>
-
-
+                language
+                      <form>
+                         <select name = "lang_en">
+                            <option value = "English" selected>English</option>
+                            <option value = "Other">Other</option>
+                         </select>
+                      </form>
+                region
+                      <form>
+                         <select name = "cr">
+                            <option value = "countryUS" selected>United States</option>
+                            <option value = "Other">Other</option>
+                         </select>
+                      </form>
+                last update
+                      <form>
+                         <select name = "as_qdr">
+                             <option value = "all" selected>anytime</option>
+                             <option value = "d" selected>past 24 hours</option>
+                             <option value = "w" selected>past week</option>
+                             <option value = "m" selected>past month</option>
+                             <option value = "y" selected>past year</option>
+                         </select>
+                      </form>
+                site or domain                                  <input type="text" name="as_sitesearch"> <br>
+                terms appearing anywhere in the page            <input type="text" name="as_occt"> <br>
+                SafeSearch
+                      <form>
+                         <select name = "safe">
+                             <option value = "images"> Show explicit results></option>
+                             <option value = "active"> Hide explicit results</option>
+                         </select>
+                      </form>
+                file type                                       <input type="text" name="as_filetype"> <br>
+                usage rights                                    <input type="text" name="tbs"> <br>
+                <br><br>
                 <input type="submit" value="Google Advanced Search">
             </form>
         </div>
