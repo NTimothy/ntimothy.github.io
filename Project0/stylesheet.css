@@ -1,18 +1,16 @@
 nav {
     text-align: right;
+    font-color: black;
 }
 
 body {
+    text-align: center;
     font-style: roboto;
-    background-color: rgba(32,33,36,1);
-    color: white;
+    background-color: white;
+    color: black;
+    <!-- Dark mode rgba(32,33,36,1) -->
 }
 
-.adv-search {
-    color: rgba(239,154,154,1);
-    font-size: 32px
-    text-align: center;
-}
 
 .top {
     text-align: right;
@@ -20,19 +18,30 @@ body {
 }
 
 .logo {
-    padding-top: 200px;
+    padding-top: 235px;
     text-align: center;
 }
 
-.logo-small {
+.search-border {
+}
+
+.search-space {
+    margin: auto;
+    max-width: 550px;
+    max-height: 10px;
+    width: 20%;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-width: thin;
+    border-radius: 450px;
+    background:white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding: 4 px;
+    width: 550px;
     text-align: left;
-
-}
-
-.search {
-    padding-top: 20px;
-    text-align: center;
-
 }
 
 .asearch {
@@ -40,4 +49,30 @@ body {
     padding-left: 200px;
     text-align: left;
 
+}
+
+input.search {
+    width: 35%;
+    height: 32px
+
+}
+
+.adv-logo {
+    padding-left: 18px;
+}
+
+.adv-search {
+    color: rgba(239,154,154,1);
+    font-size: 32px;
+}
+
+.adv-button {
+  background-color: #6699FF /* Baby Blue */
+  border: none;
+  color: black;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
 }
