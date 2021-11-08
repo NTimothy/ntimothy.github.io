@@ -23,58 +23,171 @@
             <br>
             Advanced Search
         </div>
-        <hr>
+        <hr id="hr">
         <div class="asearch">
             <form action="https://www.google.com/search">
                 Find pages with... <br><br>
-                all these words:                                <input type="text" name="as_q"> <br>
-                this exact word or phrase:                      <input type="text" name="as_epq"> <br>
-                any of these words:                             <input type="text" name="as_oq"> <br>
-                none of these words                             <input type="text" name="as_eq"> <br>
-                numbers ranging from <input type="text" name="as_nlo"> to <input type="text" name="as_nhi"> <br>
 
-                Then narrow your results by... <br>
-                language
-                      <form>
-                         <select name = "lang_en">
-                            <option value = "English" selected>English</option>
-                            <option value = "Other">Other</option>
-                         </select>
-                      </form>
-                region
-                      <form>
-                         <select name = "cr">
-                            <option value = "countryUS" selected>United States</option>
-                            <option value = "Other">Other</option>
-                         </select>
-                      </form>
-                last update
-                      <form>
-                         <select name = "as_qdr">
-                             <option value = "all" selected>anytime</option>
-                             <option value = "d" selected>past 24 hours</option>
-                             <option value = "w" selected>past week</option>
-                             <option value = "m" selected>past month</option>
-                             <option value = "y" selected>past year</option>
-                         </select>
-                      </form>
-                site or domain                                  <input type="text" name="as_sitesearch"> <br>
-                terms appearing anywhere in the page            <input type="text" name="as_occt"> <br>
-                SafeSearch
-                      <form>
-                         <select name = "safe">
-                             <option value = "images"> Show explicit results></option>
-                             <option value = "active"> Hide explicit results</option>
-                         </select>
-                      </form>
-                file type                                       <input type="text" name="as_filetype"> <br>
-                usage rights                                    <input type="text" name="tbs"> <br>
+                <table>
+                    <tr>
+                        <td id="col-one">all these words:</td>
+                        <td id="col-two"><input id="input" type="text" name="as_q"></td>
+                        <td>Type the important words:  tricolor rat terrier</td>
+                    </tr>
+                    <tr>
+                        <td>this exact word or phrase:</td>
+                        <td><input id="input" type="text" name="as_epq"></td>
+                        <td>Put exact words in quotes:  "rat terrier"</td>
+                    </tr>
+                    <tr>
+                        <td>any of these words:</td>
+                        <td ><input id="input" type="text" name="as_oq"></td>
+                        <td>Type OR between all the words you want:  miniature OR standard</td>
+                    </tr>
+                    <tr>
+                        <td>none of these words</td>
+                        <td><input id="input" type="text" name="as_eq"></td>
+                        <td>Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</td>
+                    </tr>
+                    <tr>
+                        <td>numbers ranging from</td>
+                        <td><input id="input-two" type="text" name="as_nlo"> to <input id="input-two" type="text" name="as_nhi"></td>
+                        <td>Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</td>
+                    </tr>
+                </table>
+                <hr id="hr">
+                <br>
+                Then narrow your results by...
                 <br><br>
-                <div class="adv-button">
-                    <input class="adv-button" type="submit" value="Advanced Search">
-                </div>
+                <table>
+                    <tr>
+                        <td id="col-one">
+                            language
+                        </td>
+                        <td id="col-two">
+                            <form>
+                                 <select name = "lang_en">
+                                    <option value = "English" selected>English</option>
+                                    <option value = "Other">Other</option>
+                                 </select>
+                            </form>
+                        </td>
+                        <td>
+                        Find pages in the language you select.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>region</td>
+                        <td>
+                            <form>
+                                <select name = "cr">
+                                    <option value = "countryUS" selected>United States</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td>Find pages published in a particular region.</td>
+                    </tr>
+                    <tr>
+                        <td>last update</td>
+                        <td>
+                            <form>
+                                <select name = "as_qdr">
+                                    <option value = "all" selected>anytime</option>
+                                    <option value = "d" selected>past 24 hours</option>
+                                    <option value = "w" selected>past week</option>
+                                    <option value = "m" selected>past month</option>
+                                    <option value = "y" selected>past year</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td>Find pages updated within the time you specify.</td>
+                    </tr>
+                    <tr>
+                        <td>site or domain</td>
+                        <td><input id="input" type="text" name="as_sitesearch"></td>
+                        <td>Search one site (like  wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</td>
+                    </tr>
+                    <tr>
+                        <td>terms appearing</td>
+                        <td>
+                            <form>
+                                <select name = "as_occt">
+                                    <option value = "any" selected>anywhere in the page</option>
+                                    <option value = "title" selected>in the title of the page</option>
+                                    <option value = "body" selected>in the text of the page</option>
+                                    <option value = "url" selected>in the url of the page</option>
+                                    <option value = "links" selected>in links to the page</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td>Search for terms in the whole page, page title, or web address, or links to the page you're looking for.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637719710730670204-939699477&rd=1">
+                                SafeSearch
+                        </td>
+                        <td>
+                            <form>
+                                <select name = "safe">
+                                    <option value = "images"> Show explicit results</option>
+                                    <option value = "active"> Hide explicit results</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td>Tell <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637719710730670204-939699477&rd=1">
+                            SafeSearch</a> whether to filter sexually explicit content.</td>
+                    </tr>
+                    <tr>
+                        <td>file type</td>
+                        <td>
+                            <form>
+                                <select name="as_filetype">
+                                    <option value = "any"> any format</option>
+                                    <option value = "pdf"> Adobe Acrobat PDF (.pdf)</option>
+                                    <option value = "ps"> Adobe Postscript (.ps)</option>
+                                    <option value = "dwf"> Autodesk (.dwf)</option>
+                                    <option value = "kml"> Google Earth KML (.kml)</option>
+                                    <option value = "kmz"> Google Earth KMZ (.kmz)</option>
+                                    <option value = "xls"> Microsoft XML (.xls)</option>
+                                    <option value = "ppt"> Microsoft Powerpoint (.ppt)</option>
+                                    <option value = "doc"> Microsoft Word (.doc)</option>
+                                    <option value = "rtf">Rich Text Format (.rtf)</option>
+                                    <option value = ".swf"> Shockwave Flash (.swf)</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td>Find pages in the format you prefer.</td>
+                    </tr>
+                    <tr>
+                        <td > <a href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en">usage rights</a></td>
+                        <td>
+                            <form>
+                                <select name="tbs">
+                                    <option value = ""> not filtered by license</option>
+                                    <option value = "sur%3Af"> free to use or share</option>
+                                    <option value = "sur%3Afc"> free to use or share, even commercially</option>
+                                    <option value = "sur%3Afm"> free to use share or modify</option>
+                                    <option value = "sur%3Afmc"> free to use, share or modify, even commercially</option>
+                                </select>
+                            </form>
 
+
+                        </td>
+                        <td>Find pages you are free to use yourself.</td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                    </tr>
+                    <tr style="text-align:right">
+                        <td></td>
+                        <td><input class="adv-button" style="margin-right:25px" type="submit" value="Advanced Search"></td>
+                        <td></td>
+                    </tr>
+
+                </table>
             </form>
         </div>
+
     </body>
 </html>
