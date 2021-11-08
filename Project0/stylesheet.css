@@ -76,12 +76,13 @@ input.search {
 
 
 .adv-button {
-  background-color: #6699FF /* Baby Blue */
+  background-color: #6699FF; /* Baby Blue */
   border: none;
-  color: black;
-  padding: 12px 24px;
-  text-align: center;
+  color: white;
+  padding: 4px 8px;
+  font-weight: bold;
   text-decoration: none;
+  text-align: center;
   display: inline-block;
   font-size: 12px;
 }
