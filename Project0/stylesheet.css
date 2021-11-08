@@ -7,6 +7,8 @@ body {
     text-align: center;
     font-style: roboto;
     background-color: white;
+    color: black;
+    <!-- Dark mode rgba(32,33,36,1) -->
 }
 
 
@@ -42,6 +44,22 @@ body {
     text-align: left;
 }
 
+.search-button {
+    border: none;
+    padding:10px;
+}
+
+.small-logo {
+    text-align: left;
+}
+
+.adv-search {
+    color: #CC0000;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 40px;
+}
+
 .asearch {
     padding-top: 20px;
     padding-left: 200px;
@@ -51,20 +69,14 @@ body {
 
 input.search {
     width: 35%;
-    height: 32px;
+    height: 32px
+
 }
 
-.adv-logo {
-    padding-left: 18px;
-}
 
-.adv-search {
-    color: rgba(239,154,154,1);
-    font-size: 32px;
-}
 
 .adv-button {
-  background-color: #6699FF; /* Baby Blue */
+  background-color: #6699FF /* Baby Blue */
   border: none;
   color: black;
   padding: 12px 24px;
