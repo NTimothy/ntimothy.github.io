@@ -7,8 +7,6 @@ body {
     text-align: center;
     font-style: roboto;
     background-color: white;
-    color: black;
-    <!-- Dark mode rgba(32,33,36,1) -->
 }
 
 
@@ -53,8 +51,7 @@ body {
 
 input.search {
     width: 35%;
-    height: 32px
-
+    height: 32px;
 }
 
 .adv-logo {
@@ -67,7 +64,7 @@ input.search {
 }
 
 .adv-button {
-  background-color: #6699FF /* Baby Blue */
+  background-color: #6699FF; /* Baby Blue */
   border: none;
   color: black;
   padding: 12px 24px;
