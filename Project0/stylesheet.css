@@ -4,12 +4,17 @@ nav {
 }
 
 body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     text-align: center;
-    font-style: roboto;
     background-color: white;
-    color: black;
+    color: #666666;
 }
 
+#hr {
+    border-color: #F5F5F5;
+    border-weight: thin;
+
+}
 
 .top {
     text-align: right;
@@ -48,6 +53,12 @@ body {
     padding:10px;
 }
 
+.overlay {
+    position: static;
+    z-index:1
+
+}
+
 .small-logo {
     text-align: left;
 }
@@ -61,27 +72,81 @@ body {
 
 .asearch {
     padding-top: 20px;
-    padding-left: 200px;
+    padding-left: 40px;
     text-align: left;
 
+}
+
+table {
+    margin:auto;
+    max-width:100%;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    color: #666666;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+td {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#col-one {
+    margin:auto;
+    width: 150px;
+    min-width: 100px;
+    height: 20px;
+}
+
+#col-two {
+    margin:auto;
+    width: 450px;
+    min-width: 100px;
+    height: 20px;
+
+}
+
+#input {
+    margin:auto;
+    min-width: 100px;
+    width:93.5%;
+    height: 20px;
+}
+
+#input-two {
+    margin:auto;
+    width:44%;
+    height: 20px;
+}
+
+select {
+    min-width: 100px;
+    width: 95%;
+    background-color: rgba(242,242,242,1);
+    color: black;
+    font-weight: bold;
+    padding:6px;
+    font-size: 11px;
 }
 
 input.search {
     width: 35%;
     height: 32px
-
 }
 
-
-
-.adv-button {
-  background-color: #6699FF; /* Baby Blue */
-  border: none;
-  color: white;
-  padding: 4px 8px;
+input.adv-button {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
   font-size: 12px;
+  padding: 4px 8px;
+  color: white;
+  background-color: #6699FF; /* Baby Blue */
+  border: none;
 }
